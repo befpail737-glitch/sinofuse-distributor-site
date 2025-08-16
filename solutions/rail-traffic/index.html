@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Select a Sinofuse EV Fuse for a BMS | LiTong Support</title>
+    <meta name="description" content="An in-depth guide by our FAEs on selecting the correct Sinofuse EV fuse for automotive BMS applications, covering all key technical parameters.">
+    
+    <!-- Article Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Correctly Select a Sinofuse EV Fuse for a BMS System",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe"
+      },
+      "datePublished": "2025-08-15",
+      "image": "https://www.yourdomain.com/assets/images/blog/bms-selection-guide.jpg",
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yourdomain.com/assets/logo/logo.svg"
+        }
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <!-- ... (Same header as index.html) ... -->
+    </header>
+
+    <main>
+        <div class="container content-layout">
+            <!-- Main Content: Article -->
+            <div class="main-content">
+                <article class="article-content">
+                    <nav class="breadcrumbs">
+                        <a href="/">Home</a> &raquo; 
+                        <a href="/support/">Technical Support</a> &raquo; 
+                        <span>How to Select a Sinofuse EV Fuse...</span>
+                    </nav>
+                    
+                    <span class="article-category">Selection Guide</span>
+                    <h1>How to Correctly Select a Sinofuse EV Fuse for a BMS System</h1>
+                    
+                    <div class="author-box">
+                        <img src="../../assets/images/authors/john-doe.jpg" alt="Photo of John Doe, FAE" class="author-photo">
+                        <div class="author-info">
+                            <strong>By John Doe, Senior FAE</strong>
+                            <span>Published on: August 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <img src="/cdn-cgi/image/width=800,quality=85,format=auto/assets/images/blog/bms-selection-guide.jpg" alt="A detailed schematic showing a fuse within a BMS system" class="article-featured-image">
+
+                    <p>Selecting the main fuse for a Battery Management System (BMS) in an electric vehicle is one of the most critical safety decisions in the design process. An incorrectly chosen fuse can lead to either nuisance tripping or, far worse, a failure to protect the battery pack during a fault event. This guide will walk you through the key parameters to consider when selecting a fuse from the <a href="/products/new-energy-vehicle/">Sinofuse EV series</a>.</p>
+
+                    <h2>1. The Importance of BMS Protection</h2>
+                    <p>The BMS is the brain of the battery pack, but the main fuse is its ultimate failsafe. It's the last line of defense against catastrophic short circuits that could lead to thermal runaway. The fuse must be robust enough to handle normal inrush currents and cycling, yet react instantaneously to dangerous fault currents.</p>
+
+                    <h2>2. Key Parameter Deep Dive</h2>
+                    <h3>Rated Voltage</h3>
+                    <p>The fuse's DC voltage rating must be equal to or greater than the maximum system voltage of the battery pack. For an 800V battery system, you must choose a fuse rated for at least 800VDC, such as a model from the Sinofuse EV318 series.</p>
+                    
+                    <h3>Rated Current</h3>
+                    <p>This is not as simple as matching the fuse to the system's continuous current. You must apply derating factors for ambient temperature. For example, a fuse operating at 85°C may only carry 80% of its nominal rating. Always consult the temperature derating curve in the datasheet for a part like the <a href="/products/ev-series/EV315-M-4Q.html">EV315-M-4Q</a>.</p>
+
+                    <h3>Breaking Capacity</h3>
+                    <p>The breaking capacity (or interrupting rating) must be higher than the maximum prospective short-circuit current of the system. A large battery pack can deliver tens of thousands of amps in a fault. A fuse with a 50kA breaking capacity is typically required.</p>
+                    
+                    <h3>I²t Value (Melting Integral)</h3>
+                    <p>This is crucial for coordination. The total clearing I²t of the fuse must be lower than the I²t withstand capability of the components it protects (like battery cells and contactors). This ensures the fuse opens before other components are damaged.</p>
+
+                    <h2>3. A Practical Selection Example</h2>
+                    <p>Let's consider an 800V/200A battery pack with a max short-circuit current of 30kA, operating in a 70°C ambient environment...</p>
+                    <!-- The detailed example would continue here -->
+                    
+                    <div class="cta-box">
+                        <h3>Need Help with Selection?</h3>
+                        <p>Our FAE team has extensive experience with Sinofuse products in automotive applications. Contact us for a personalized selection review.</p>
+                        <a href="/contact.html" class="btn btn-secondary">Contact an FAE</a>
+                    </div>
+                </article>
+
+                <section class="related-articles">
+                    <h2>Related Articles</h2>
+                    <div class="article-grid">
+                        <!-- Related article card -->
+                        <div class="related-article-card">
+                            <a href="#">
+                                <h3>Understanding I²t and Fuse Coordination</h3>
+                                <p>A deeper look into the science of fuse melting integrals.</p>
+                            </a>
+                        </div>
+                        <!-- Related article card -->
+                        <div class="related-article-card">
+                            <a href="#">
+                                <h3>High Voltage DC Fusing Challenges</h3>
+                                <p>Why protecting DC circuits is more complex than AC.</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Sidebar content would be identical to the /support/index.html page -->
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <!-- ... (Same footer as index.html) ... -->
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

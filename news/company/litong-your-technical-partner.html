@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PV Inverter DC Side Protection: A Complete Guide | Sinofuse</title>
+    <meta name="description" content="A detailed application note on selecting Sinofuse PV series fuses for solar inverter protection. Understand gPV characteristics, reverse currents, and sizing calculations.">
+    <!-- Article Schema.org -->
+    <script type="application/ld+json">{...}</script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="main-header"><!-- ... Header ... --></header>
+    <main>
+        <div class="container content-layout">
+            <div class="main-content">
+                <article class="article-content">
+                    <nav class="breadcrumbs">
+                        <a href="/">Home</a> &raquo; <a href="/support/">Support</a> &raquo; <span>PV Inverter Protection Guide</span>
+                    </nav>
+                    <span class="article-category">Application Note</span>
+                    <h1>PV Inverter DC Side Protection: A Complete Application Guide</h1>
+                    <div class="author-box">
+                        <img src="../../assets/images/authors/jane-smith.jpg" alt="Photo of Jane Smith, FAE" class="author-photo">
+                        <div class="author-info"><strong>By Jane Smith, FAE</strong><span>Published on: August 10, 2025</span></div>
+                    </div>
+                    <img src="/cdn-cgi/image/width=800,quality=85,format=auto/assets/images/blog/pv-inverter.jpg" alt="Solar panels with a close-up on a DC combiner box" class="article-featured-image">
+                    
+                    <p>Protecting the DC side of a photovoltaic (PV) system is a unique challenge that requires specialized components. Unlike traditional AC circuits, PV arrays are current-limited power sources where fault conditions can be subtle yet dangerous. This application note provides a comprehensive guide on using <a href="/products/photovoltaic/PV312-Series.html">Sinofuse PV series fuses</a> to ensure the safety and reliability of your solar inverter designs.</p>
+
+                    <h2>Understanding the "gPV" Characteristic</h2>
+                    <p>The most critical factor in PV protection is understanding the <strong>gPV</strong> fuse class, as defined by the IEC 60269-6 standard. A gPV fuse is a full-range breaking capacity fuse designed specifically for photovoltaic applications. Its key feature is the ability to reliably interrupt very low overload currents.</p>
+                    <p>In a solar array, a fault (e.g., from a shaded or damaged panel) might only produce a current that is 1.3 to 1.5 times the nominal operating current (Isc). A standard gG fuse would likely fail to open under these conditions, allowing the fault to persist and potentially cause a fire. A gPV fuse is guaranteed to open safely at these low multiples of its rated current, isolating the faulty string.</p>
+
+                    <h2>Sizing the String Fuse: A Step-by-Step Calculation</h2>
+                    <p>The primary role of the string fuse is to protect against reverse currents. To size it correctly, follow these steps based on the solar panel's datasheet:</p>
+                    <ol>
+                        <li><strong>Determine Maximum Series Fuse Rating:</strong> Find the "Maximum Series Fuse Rating" on the panel's datasheet. Your selected fuse must have a current rating (In) less than or equal to this value.</li>
+                        <li><strong>Apply Sizing Factor:</strong> The fuse rating (In) should be greater than or equal to 1.56 times the panel's Short Circuit Current (Isc). This factor accounts for solar irradiance gain and ensures the fuse does not nuisance trip under peak sun conditions.</li>
+                    </ol>
+                    <p><strong>Example:</strong> A panel has an Isc of 10A and a Maximum Series Fuse Rating of 20A. The minimum fuse rating would be 10A * 1.56 = 15.6A. Therefore, a 20A gPV fuse from the <a href="/products/photovoltaic/PV312-Series.html">PV312 Series</a> would be the correct choice.</p>
+
+                    <h2>Voltage Rating and Breaking Capacity</h2>
+                    <p>The voltage rating of the fuse must be greater than or equal to the maximum open-circuit voltage (Voc) of the solar string, including temperature corrections. For modern systems, this means selecting a fuse rated for <strong>1500VDC</strong>. The breaking capacity must be sufficient to handle the worst-case fault current from all parallel strings, which is why a rating of 30kA or higher is standard.</p>
+
+                    <div class="cta-box">
+                        <h3>Need help with your PV design?</h3>
+                        <p>Our FAEs can perform a complimentary review of your PV protection scheme to ensure it is safe and compliant.</p>
+                        <a href="/contact.html" class="btn btn-secondary">Contact an FAE</a>
+                    </div>
+                </article>
+            </div>
+            <aside class="sidebar"><!-- ... Sidebar ... --></aside>
+        </div>
+    </main>
+    <footer class="main-footer"><!-- ... Footer ... --></footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

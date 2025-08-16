@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Critical Difference Between DC and AC Fuses | LiTong</title>
+    <meta name="description" content="A technical explanation of why AC and DC circuit protection are different. Learn about the DC arc, zero-crossing, and why using the wrong fuse is dangerous.">
+    <!-- Article Schema.org -->
+    <script type="application/ld+json">{...}</script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="main-header"><!-- ... Header ... --></header>
+    <main>
+        <div class="container content-layout">
+            <div class="main-content">
+                <article class="article-content">
+                    <span class="article-category">Technical Guide</span>
+                    <h1>Why You Can't Mix Them: The Critical Difference Between DC and AC Fuses</h1>
+                    <div class="author-box">... Author Info ...</div>
+                    
+                    <p>A common but extremely dangerous mistake in electrical design is assuming a fuse is a fuse. While they may look similar, an AC-rated fuse and a DC-rated fuse are fundamentally different beasts. Using an AC fuse in a DC application, especially at high voltages, can lead to catastrophic failure. This guide explains the core physics behind this critical distinction.</p>
+
+                    <h2>The Challenge: The Persistent DC Arc</h2>
+                    <p>When a fuse element melts to interrupt a fault, it creates a small gap. In an AC circuit, the current naturally passes through zero 100 or 120 times per second. This "zero-crossing" point de-energizes the arc, allowing the gap inside the fuse to cool and solidify, thus permanently breaking the circuit.</p>
+                    <p>In a DC circuit, <strong>there is no zero-crossing</strong>. The current is constant. When the fuse element melts, a plasma arc forms across the gap, and it will sustain itself as long as the system voltage can support it. The DC current continues to flow through this plasma, and the fuse fails to clear the fault. The result can be the fuse itself overheating, exploding, and causing a fire.</p>
+
+                    <h2>How DC Fuses Are Different</h2>
+                    <p>A fuse designed for DC applications, like the <a href="/products/new-energy-vehicle/">Sinofuse EV Series</a>, has special features to combat the DC arc:</p>
+                    <ul>
+                        <li><strong>Arc-Quenching Filler:</strong> DC fuses are typically filled with high-purity quartz sand. When the arc forms, the intense heat melts the sand into glass (a process called fulgurite formation), which is non-conductive. This glass structure physically fills the gap, stretching and cooling the arc until it is extinguished.</li>
+                        <li><strong>Longer Arc Path:</strong> The internal construction of a DC fuse is often designed to create a longer path for the arc than a comparable AC fuse, which makes the arc harder to sustain.</li>
+                        <li><strong>Magnetic Arc Quenching:</strong> Some advanced DC circuit breakers and fuses use magnets to physically "blow out" the arc, forcing it into arc chutes to be cooled and extinguished.</li>
+                    </ul>
+
+                    <h2>The Golden Rule</h2>
+                    <p>Always use a fuse that is specifically rated for the DC voltage of your application. An AC fuse can sometimes be used in a DC circuit, but ONLY if the manufacturer explicitly provides a DC voltage rating for it, which is often much lower than its AC rating. When in doubt, always choose a fuse designed and tested for DC from the ground up, especially in high-power applications like <a href="/solutions/energy-storage/">Energy Storage Systems</a> or Electric Vehicles.</p>
+                </article>
+            </div>
+            <aside class="sidebar"><!-- ... Sidebar ... --></aside>
+        </div>
+    </main>
+    <footer class="main-footer"><!-- ... Footer ... --></footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1314,6 +1314,274 @@ a:hover {
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
+/* Solution Detail Page Components */
+.system-diagram {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.diagram-placeholder {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    border: 2px dashed #ccc;
+}
+
+.diagram-content h3 {
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.diagram-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.component-box {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 120px;
+}
+
+.component-box.protection {
+    border: 2px solid var(--primary-color);
+    background-color: #fef5f5;
+}
+
+.component-icon {
+    font-size: 1.5rem;
+}
+
+.component-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.flow-arrow {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.bom-description {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Product Image Placeholders by Category */
+.product-image-placeholder.automotive {
+    background: linear-gradient(135deg, #1976d2, #42a5f5);
+}
+
+.product-image-placeholder.solar {
+    background: linear-gradient(135deg, #ff9800, #ffc107);
+}
+
+.product-image-placeholder.industrial {
+    background: linear-gradient(135deg, #424242, #757575);
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-badge.available {
+    background-color: #4caf50;
+    color: var(--white);
+}
+
+.status-badge.limited {
+    background-color: #ff9800;
+    color: var(--white);
+}
+
+.status-badge.backorder {
+    background-color: #f44336;
+    color: var(--white);
+}
+
+/* Benefit Card Detailed */
+.benefit-card-detailed {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.benefit-card-detailed:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.benefit-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-icon {
+    font-size: 2rem;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.benefit-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Product Mini Cards */
+.product-card-mini {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.product-card-mini:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.product-mini-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.product-mini-icon + h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.product-card-mini p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Documentation Grid */
+.documentation-grid .doc-category h3,
+.documentation-grid .support-options h3 {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.doc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.doc-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.doc-item:hover {
+    background-color: #e0e0e0;
+}
+
+.doc-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.doc-info {
+    flex: 1;
+}
+
+.doc-title {
+    display: block;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.25rem;
+}
+
+.doc-desc {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.support-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.support-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.support-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.support-content {
+    flex: 1;
+}
+
+.support-content h4 {
+    margin-bottom: 0.5rem;
+}
+
+.support-content p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
 /* Additional Responsive Design */
 @media (max-width: 768px) {
     .product-finder,
@@ -1352,5 +1620,389 @@ a:hover {
     .contact-method {
         flex-direction: column;
         gap: 0.25rem;
+    }
+    
+    .diagram-flow {
+        flex-direction: column;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .benefit-header {
+        align-items: flex-start;
+    }
+    
+    .doc-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .support-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Technical Guide Components */
+.guide-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.guide-article {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+}
+
+.guide-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.meta-label {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.meta-value {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.difficulty-intermediate {
+    color: var(--secondary-color);
+}
+
+.guide-overview {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.guide-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.guide-section:last-child {
+    border-bottom: none;
+}
+
+.protection-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.protection-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.point-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.point-content h4 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.point-specs {
+    display: inline-block;
+    background-color: var(--light-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.criteria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.criteria-item {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.criteria-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.product-comparison {
+    margin: 2rem 0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table th {
+    background-color: var(--light-color);
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.selection-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.step-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.step-formula {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.calculation-box {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    font-family: monospace;
+    text-align: center;
+}
+
+.example-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.example-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.example-card h3 {
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.example-specs {
+    margin: 1.5rem 0;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    font-weight: 500;
+    color: #666;
+}
+
+.spec-value {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.example-selection {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+}
+
+.practices-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.practice-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.practice-card.do {
+    border-left: 4px solid #4caf50;
+}
+
+.practice-card.dont {
+    border-left: 4px solid #f44336;
+}
+
+.practice-card h3 {
+    margin-bottom: 1rem;
+}
+
+.practice-card.do h3 {
+    color: #4caf50;
+}
+
+.practice-card.dont h3 {
+    color: #f44336;
+}
+
+.practice-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.practice-card ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.practice-card.do ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.practice-card.dont ul li:before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* Additional responsive design for guides */
+@media (max-width: 768px) {
+    .guide-article {
+        padding: 2rem 1.5rem;
+    }
+    
+    .guide-meta {
+        grid-template-columns: 1fr;
+    }
+    
+    .criteria-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .protection-point {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .practices-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .spec-row {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem 0.5rem;
     }
 }

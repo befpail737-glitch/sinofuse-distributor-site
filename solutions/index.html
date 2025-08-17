@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="container">
             <a href="../index.html" class="logo-link">
-                <img src="../assets/logo/logo.svg" alt="LiTong Logo" class="logo-img">
+                <div class="logo-text">LiTong</div>
             </a>
             <nav class="main-nav">
                 <ul>
@@ -33,56 +33,274 @@
         <section class="page-header">
             <div class="container">
                 <h1>Circuit Protection Solutions</h1>
-                <p>Industry-proven solutions designed for reliability and safety.</p>
+                <p>Industry-proven solutions designed for reliability and safety</p>
             </div>
         </section>
 
-        <section class="container">
-            <div class="solutions-list">
-                <!-- Solution 1: Automotive -->
-                <div class="solution-list-card">
-                    <div class="solution-card-img">
-                        <img src="/cdn-cgi/image/width=400,quality=80,format=auto/assets/images/solution-ev-pack.jpg" loading="lazy" alt="EV Battery Pack">
-                    </div>
-                    <div class="solution-card-content">
-                        <h2>EV Battery Pack (BMS) Protection Solution</h2>
-                        <p class="summary">A comprehensive solution for protecting high-voltage electric vehicle battery packs. This design uses automotive-grade Sinofuse EV fuses to safeguard against overcurrent and short-circuit events, ensuring passenger safety and system longevity in demanding vibration and temperature environments. Key focus areas include main fuse selection, contactor protection, and pre-charge circuit safety.</p>
-                        <a href="/solutions/automotive/" class="btn btn-primary">View Solution Details</a>
-                    </div>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Home</a> &raquo; 
+                <span>Solutions</span>
+            </nav>
+
+            <!-- Solutions Overview -->
+            <section class="section">
+                <div class="category-description">
+                    <h2>Application-Focused Protection Solutions</h2>
+                    <p>Our expert team designs comprehensive circuit protection solutions tailored to specific industry needs. Each solution leverages Sinofuse's advanced technology and our deep application knowledge to ensure optimal performance and safety.</p>
+                    <p><strong>From design consultation to implementation support, we're your complete solution partner.</strong></p>
                 </div>
 
-                <!-- Solution 2: Energy Storage -->
-                <div class="solution-list-card">
-                    <div class="solution-card-img">
-                         <img src="/cdn-cgi/image/width=400,quality=80,format=auto/assets/images/solution-ess.jpg" loading="lazy" alt="Containerized Energy Storage System">
+                <!-- Primary Solutions Grid -->
+                <div class="grid grid-2 solutions-grid">
+                    <div class="solution-category-card featured">
+                        <div class="solution-header">
+                            <div class="solution-icon large">🚗</div>
+                            <div class="solution-title">
+                                <h3>Automotive Solutions</h3>
+                                <span class="solution-category">Electric & Hybrid Vehicles</span>
+                            </div>
+                        </div>
+                        <div class="solution-content">
+                            <p>Complete protection solutions for electric and hybrid vehicle systems, including battery pack protection, PDU circuits, and charging infrastructure.</p>
+                            
+                            <div class="solution-features">
+                                <div class="feature-grid">
+                                    <div class="feature-item">
+                                        <span class="feature-label">Battery Pack (BMS)</span>
+                                        <span class="feature-desc">Main pack & string protection</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-label">Power Distribution</span>
+                                        <span class="feature-desc">PDU & auxiliary circuits</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-label">Charging Systems</span>
+                                        <span class="feature-desc">DC fast charging protection</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-label">Motor Controllers</span>
+                                        <span class="feature-desc">Inverter & drive protection</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="solution-benefits">
+                                <span class="benefit-tag">AEC-Q200 Qualified</span>
+                                <span class="benefit-tag">Vibration Resistant</span>
+                                <span class="benefit-tag">High Voltage DC</span>
+                            </div>
+                            
+                            <a href="automotive/index.html" class="btn btn-primary">Explore Automotive Solutions</a>
+                        </div>
                     </div>
-                    <div class="solution-card-content">
-                        <h2>Containerized ESS DC Side Protection Solution</h2>
-                        <p class="summary">This solution addresses the unique challenges of large-scale Battery Energy Storage Systems (BESS). It provides a coordinated protection scheme for battery racks, DC combiners, and PCS inverters using high-performance Sinofuse fuses. The design ensures high breaking capacity for DC faults and long-term reliability, maximizing system uptime and protecting high-value assets.</p>
-                        <a href="/solutions/energy-storage/" class="btn btn-primary">View Solution Details</a>
+
+                    <div class="solution-category-card featured">
+                        <div class="solution-header">
+                            <div class="solution-icon large">🏢</div>
+                            <div class="solution-title">
+                                <h3>Energy Storage Systems</h3>
+                                <span class="solution-category">Grid & Commercial ESS</span>
+                            </div>
+                        </div>
+                        <div class="solution-content">
+                            <p>Comprehensive protection for large-scale energy storage systems, from residential battery systems to utility-scale installations.</p>
+                            
+                            <div class="solution-features">
+                                <div class="feature-grid">
+                                    <div class="feature-item">
+                                        <span class="feature-label">Battery Management</span>
+                                        <span class="feature-desc">Module & rack protection</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-label">Power Conversion</span>
+                                        <span class="feature-desc">PCS & inverter protection</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-label">DC Combiners</span>
+                                        <span class="feature-desc">String & array protection</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-label">Grid Interconnection</span>
+                                        <span class="feature-desc">AC side protection</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="solution-benefits">
+                                <span class="benefit-tag">High Breaking Capacity</span>
+                                <span class="benefit-tag">Temperature Stable</span>
+                                <span class="benefit-tag">Fast Acting</span>
+                            </div>
+                            
+                            <a href="energy-storage/index.html" class="btn btn-primary">Explore ESS Solutions</a>
+                        </div>
+                    </div>
+
+                    <div class="solution-category-card">
+                        <div class="solution-header">
+                            <div class="solution-icon">☀️</div>
+                            <h3>Photovoltaic Solutions</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p>Specialized protection for solar installations, including string protection, combiner boxes, and inverter applications.</p>
+                            <div class="solution-highlights">
+                                <span>• gPV rated fuses</span>
+                                <span>• High voltage DC applications</span>
+                                <span>• Temperature cycling resistance</span>
+                            </div>
+                            <a href="photovoltaic/index.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="solution-category-card">
+                        <div class="solution-header">
+                            <div class="solution-icon">🚆</div>
+                            <h3>Rail Traffic Solutions</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p>Robust protection for railway auxiliary power systems, designed to withstand extreme shock and vibration conditions.</p>
+                            <div class="solution-highlights">
+                                <span>• Auxiliary Power Systems (APS)</span>
+                                <span>• Extreme vibration resistance</span>
+                                <span>• Railway standard compliance</span>
+                            </div>
+                            <a href="rail-traffic/index.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="solution-category-card">
+                        <div class="solution-header">
+                            <div class="solution-icon">📡</div>
+                            <h3>Telecom Power Solutions</h3>
+                        </div>
+                        <div class="solution-content">
+                            <p>Reliable protection for telecommunications power distribution units and backup power systems.</p>
+                            <div class="solution-highlights">
+                                <span>• Power Distribution Units (PDU)</span>
+                                <span>• Backup power systems</span>
+                                <span>• High reliability requirements</span>
+                            </div>
+                            <a href="telecom-power/index.html" class="btn btn-outline">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Placeholder for Solution 3: Photovoltaic -->
-                <div class="solution-list-card">
-                    <div class="solution-card-img">
-                         <img src="/cdn-cgi/image/width=400,quality=80,format=auto/assets/images/solution-pv.jpg" loading="lazy" alt="Solar Panels and Inverter">
+            </section>
+
+            <!-- Solution Development Process -->
+            <section class="section section-light">
+                <h2 class="section-title">Our Solution Development Process</h2>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Application Analysis</h3>
+                            <p>We analyze your specific requirements including voltage, current, environmental conditions, and safety standards.</p>
+                        </div>
                     </div>
-                    <div class="solution-card-content">
-                        <h2>Photovoltaic Inverter Protection Solution</h2>
-                        <p class="summary">A specialized solution for protecting the DC side of central and string solar inverters. Featuring Sinofuse PV series fuses with gPV characteristics, this design effectively isolates faulty strings, prevents reverse current damage, and ensures compliance with global photovoltaic safety standards. It is suitable for systems up to 1500VDC.</p>
-                        <a href="#" class="btn btn-primary">View Solution Details</a>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Solution Design</h3>
+                            <p>Our FAE team designs a comprehensive protection scheme using optimal Sinofuse products for your application.</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Testing & Validation</h3>
+                            <p>We provide samples and support testing to validate the solution meets your performance requirements.</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Implementation Support</h3>
+                            <p>Ongoing technical support throughout design-in, qualification, and production phases.</p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Add placeholders for solutions 4 and 5 here -->
+            <!-- Industries We Serve -->
+            <section class="section">
+                <h2 class="section-title">Industries We Serve</h2>
+                <div class="grid grid-4 industries-grid">
+                    <div class="industry-card">
+                        <div class="industry-icon">⚡</div>
+                        <h3>Electric Vehicles</h3>
+                        <p>Battery packs, charging infrastructure, power electronics</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">🔋</div>
+                        <h3>Energy Storage</h3>
+                        <p>Grid storage, residential ESS, commercial applications</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">🌞</div>
+                        <h3>Solar Energy</h3>
+                        <p>Utility solar, rooftop installations, microinverters</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">🏭</div>
+                        <h3>Industrial</h3>
+                        <p>Power distribution, motor drives, control panels</p>
+                    </div>
+                </div>
+            </section>
 
-            </div>
-        </section>
+            <!-- Call to Action -->
+            <section class="section cta-section">
+                <div class="cta-content">
+                    <h2>Ready to Develop Your Custom Solution?</h2>
+                    <p>Our experienced FAE team is ready to help you design the perfect circuit protection solution for your specific application.</p>
+                    <div class="cta-buttons">
+                        <a href="../contact.html" class="btn btn-primary">Start a Solution Discussion</a>
+                        <a href="../support/index.html" class="btn btn-outline">Browse Technical Resources</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="main-footer">
-        <!-- ... (Same footer as index.html) ... -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LiTong</h3>
+                    <p>Authorized Sinofuse Distributor</p>
+                    <p>Professional Circuit Protection Solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Solution Areas</h3>
+                    <ul>
+                        <li><a href="automotive/index.html">Automotive</a></li>
+                        <li><a href="energy-storage/index.html">Energy Storage</a></li>
+                        <li><a href="photovoltaic/index.html">Photovoltaic</a></li>
+                        <li><a href="rail-traffic/index.html">Rail Traffic</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="../support/index.html">Technical Support</a></li>
+                        <li><a href="../contact.html">Contact FAE Team</a></li>
+                        <li><a href="../products/index.html">Browse Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: +1-555-010-8888</p>
+                    <p>Email: solutions@litong-group.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Inc. All Rights Reserved. | Sinofuse Authorized Distributor</p>
+            </div>
+        </div>
     </footer>
 
     <script src="../js/main.js"></script>

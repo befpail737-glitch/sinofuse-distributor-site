@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="container">
             <a href="../index.html" class="logo-link">
-                <img src="../assets/logo/logo.svg" alt="LiTong Logo" class="logo-img">
+                <div class="logo-text">LiTong</div>
             </a>
             <nav class="main-nav">
                 <ul>
@@ -33,57 +33,212 @@
         <section class="page-header">
             <div class="container">
                 <h1>Sinofuse Product Center</h1>
-                <p>Your source for high-performance circuit protection solutions.</p>
+                <p>Your source for high-performance circuit protection solutions</p>
             </div>
         </section>
 
-        <section class="product-areas">
-            <div class="container">
-                <h2>Browse by Category</h2>
-                <div class="product-grid">
-                    <!-- Card 1 -->
-                    <div class="product-card">
-                        <img src="../assets/icons/ev-car.svg" alt="Electric Vehicle Icon" class="product-icon">
-                        <h3>New Energy Vehicles (EV/HEV)</h3>
-                        <p>Fuses designed for the demanding environments of battery packs, PDUs, and motor controllers.</p>
-                        <a href="/products/new-energy-vehicle/">View EV Fuses &rarr;</a>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Home</a> &raquo; 
+                <span>Products</span>
+            </nav>
+
+            <!-- Product Categories Overview -->
+            <section class="section">
+                <div class="category-description">
+                    <h2>Complete Range of Sinofuse Products</h2>
+                    <p>As an authorized distributor, we provide the full spectrum of Sinofuse circuit protection solutions. From cutting-edge EV fuses to robust industrial protection, our inventory ensures you have access to the right component for your application.</p>
+                    <p><strong>All products are 100% genuine with full traceability and technical support.</strong></p>
+                </div>
+
+                <!-- Product Category Grid -->
+                <div class="grid grid-2 product-categories">
+                    <div class="product-category-card large">
+                        <div class="category-header">
+                            <div class="category-icon">🚗</div>
+                            <h3>New Energy Vehicle (EV/HEV)</h3>
+                        </div>
+                        <div class="category-content">
+                            <p>Advanced protection solutions for electric and hybrid vehicles, including battery pack fuses, PDU protection, and motor controller fuses.</p>
+                            <div class="category-stats">
+                                <span class="stat">High Voltage DC</span>
+                                <span class="stat">Vibration Resistant</span>
+                                <span class="stat">AEC-Q200 Qualified</span>
+                            </div>
+                            <div class="category-products">
+                                <div class="product-item">
+                                    <span class="product-name">EV315-M-4Q Series</span>
+                                    <span class="product-type">Main Pack Fuse</span>
+                                </div>
+                            </div>
+                            <a href="new-energy-vehicle/index.html" class="btn btn-primary">View EV Products</a>
+                        </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="product-card">
-                        <img src="../assets/icons/ess.svg" alt="Energy Storage System Icon" class="product-icon">
-                        <h3>Energy Storage Systems (ESS)</h3>
-                        <p>High-reliability protection for Battery Management Systems (BMS) and Power Conversion Systems (PCS).</p>
-                        <a href="#">View ESS Fuses &rarr;</a>
+
+                    <div class="product-category-card large">
+                        <div class="category-header">
+                            <div class="category-icon">🏭</div>
+                            <h3>Industrial & General Purpose</h3>
+                        </div>
+                        <div class="category-content">
+                            <p>Reliable protection for industrial equipment, power distribution, and general applications requiring high breaking capacity.</p>
+                            <div class="category-stats">
+                                <span class="stat">High Breaking Capacity</span>
+                                <span class="stat">Wide Current Range</span>
+                                <span class="stat">IEC Standards</span>
+                            </div>
+                            <div class="category-products">
+                                <div class="product-item">
+                                    <span class="product-name">RS309-Mf-H Series</span>
+                                    <span class="product-type">Industrial Fuse</span>
+                                </div>
+                                <div class="product-item">
+                                    <span class="product-name">BS88-4 Series</span>
+                                    <span class="product-type">General Purpose</span>
+                                </div>
+                            </div>
+                            <a href="industrial/RS309-Mf-H-40A.html" class="btn btn-primary">View Industrial Products</a>
+                        </div>
                     </div>
-                    <!-- Card 3 -->
-                    <div class="product-card">
-                        <img src="../assets/icons/photovoltaic.svg" alt="Photovoltaic Icon" class="product-icon">
-                        <h3>Photovoltaic (PV)</h3>
-                        <p>Specialized 1500VDC gPV fuses to protect solar inverters and combiner boxes effectively.</p>
-                        <a href="#">View PV Fuses &rarr;</a>
+
+                    <div class="product-category-card large">
+                        <div class="category-header">
+                            <div class="category-icon">☀️</div>
+                            <h3>Photovoltaic (PV)</h3>
+                        </div>
+                        <div class="category-content">
+                            <p>Specialized gPV fuses designed for solar applications, providing reliable protection for inverters and DC combiner boxes.</p>
+                            <div class="category-stats">
+                                <span class="stat">gPV Rated</span>
+                                <span class="stat">High Voltage DC</span>
+                                <span class="stat">Temperature Stable</span>
+                            </div>
+                            <div class="category-products">
+                                <div class="product-item">
+                                    <span class="product-name">PV312 Series</span>
+                                    <span class="product-type">gPV Fuse</span>
+                                </div>
+                            </div>
+                            <a href="photovoltaic/PV312-Series.html" class="btn btn-primary">View PV Products</a>
+                        </div>
                     </div>
-                    <!-- Card 4 -->
-                    <div class="product-card">
-                        <img src="../assets/icons/industrial.svg" alt="Industrial Icon" class="product-icon">
-                        <h3>Industrial & Rail</h3>
-                        <p>Robust and reliable fuses for industrial automation, power distribution, and rail traffic systems.</p>
-                        <a href="#">View Industrial Fuses &rarr;</a>
+
+                    <div class="product-category-card large">
+                        <div class="category-header">
+                            <div class="category-icon">🚆</div>
+                            <h3>EV Series</h3>
+                        </div>
+                        <div class="category-content">
+                            <p>High-performance EV fuses specifically designed for battery management systems and electric vehicle applications.</p>
+                            <div class="category-stats">
+                                <span class="stat">Fast Acting</span>
+                                <span class="stat">Low Resistance</span>
+                                <span class="stat">Automotive Grade</span>
+                            </div>
+                            <div class="category-products">
+                                <div class="product-item">
+                                    <span class="product-name">EV315-M-4Q</span>
+                                    <span class="product-type">BMS Protection</span>
+                                </div>
+                            </div>
+                            <a href="ev-series/EV315-M-4Q.html" class="btn btn-primary">View EV Series</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="final-cta">
-             <div class="container">
-                <h2>Can't Find What You're Looking For?</h2>
-                <p>Our FAE team is ready to help you with product selection and cross-referencing.</p>
-                <a href="/contact.html" class="btn btn-primary">Contact Us</a>
-            </div>
-        </section>
+            </section>
+
+            <!-- Quick Product Finder -->
+            <section class="section section-light">
+                <h2 class="section-title">Quick Product Finder</h2>
+                <div class="product-finder">
+                    <div class="finder-content">
+                        <h3>Need help finding the right fuse?</h3>
+                        <p>Our product selection can be complex. Let our technical team help you find the perfect Sinofuse solution for your specific application requirements.</p>
+                        <div class="finder-options">
+                            <a href="../contact.html" class="btn btn-primary">Contact Technical Team</a>
+                            <a href="../support/index.html" class="btn btn-outline">Browse Technical Guides</a>
+                        </div>
+                    </div>
+                    <div class="finder-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📋</span>
+                            <span>Application Analysis</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔍</span>
+                            <span>Part Cross-Reference</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📦</span>
+                            <span>Sample Requests</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span>Fast Response</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Benefits -->
+            <section class="section">
+                <h2 class="section-title">Why Choose Our Products?</h2>
+                <div class="grid grid-3">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">✅</div>
+                        <h3>100% Genuine</h3>
+                        <p>All products sourced directly from Sinofuse with full certificates of authenticity and traceability documentation.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📦</div>
+                        <h3>Ready to Ship</h3>
+                        <p>Large inventory maintained locally for fast delivery. Most standard parts ship within 1-2 business days.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔧</div>
+                        <h3>Technical Support</h3>
+                        <p>Expert FAE team provides application guidance, cross-referencing, and design-in support for your projects.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="main-footer">
-        <!-- ... (Same footer as index.html) ... -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LiTong</h3>
+                    <p>Authorized Sinofuse Distributor</p>
+                    <p>Professional Circuit Protection Solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product Categories</h3>
+                    <ul>
+                        <li><a href="new-energy-vehicle/index.html">EV/HEV Fuses</a></li>
+                        <li><a href="industrial/RS309-Mf-H-40A.html">Industrial Fuses</a></li>
+                        <li><a href="photovoltaic/PV312-Series.html">PV Fuses</a></li>
+                        <li><a href="ev-series/EV315-M-4Q.html">EV Series</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="../support/index.html">Technical Support</a></li>
+                        <li><a href="../contact.html">Contact FAE Team</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: +1-555-010-8888</p>
+                    <p>Email: products@litong-group.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Inc. All Rights Reserved. | Sinofuse Authorized Distributor</p>
+            </div>
+        </div>
     </footer>
 
     <script src="../js/main.js"></script>

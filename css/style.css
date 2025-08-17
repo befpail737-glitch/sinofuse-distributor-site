@@ -182,13 +182,18 @@ a:hover {
 
 .btn-outline { 
     background-color: transparent; 
-    border: 2px solid var(--dark-color); 
-    color: var(--dark-color); 
+    border: 2px solid var(--primary-color); 
+    color: var(--primary-color); 
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-outline:hover { 
-    background-color: var(--dark-color); 
-    color: var(--white); 
+    background-color: var(--primary-color); 
+    color: var(--white);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
 }
 
 /* ===== SECTIONS ===== */
@@ -214,6 +219,11 @@ a:hover {
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.grid-4-single-row { 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.5rem;
+    align-items: stretch;
+}
 
 /* ===== CARDS ===== */
 .card {
@@ -472,6 +482,26 @@ a:hover {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .grid-4-single-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .category-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid-4-single-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .main-header .container {
         flex-direction: column;
@@ -503,8 +533,26 @@ a:hover {
     
     .grid-2,
     .grid-3,
-    .grid-4 {
+    .grid-4,
+    .grid-4-single-row {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .product-category-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .category-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -536,19 +584,35 @@ a:hover {
     text-align: center;
 }
 
-/* Product Category Cards */
+/* Product Category Cards - Modern Design */
 .product-category-card {
     background-color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    transition: var(--transition);
-    border-left: 4px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .product-category-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: var(--primary-color);
 }
 
 .product-category-card.large {
@@ -563,13 +627,40 @@ a:hover {
 }
 
 .category-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 20px;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.category-content {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .category-content h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--dark-color);
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+.category-content p {
+    margin-bottom: 2rem;
+    color: #666;
+    line-height: 1.6;
+    flex: 1;
 }
 
 .category-stats {
@@ -854,20 +945,36 @@ a:hover {
 /* Support Service Cards */
 .support-service-card {
     background-color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    transition: var(--transition);
-    border-left: 4px solid var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.support-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--light-color), #e0e0e0);
 }
 
 .support-service-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: var(--primary-color);
 }
 
-.support-service-card.priority {
-    border-left-color: var(--secondary-color);
+.support-service-card.priority::before {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
 }
 
 .service-header {
@@ -876,8 +983,16 @@ a:hover {
 
 .service-icon {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    display: block;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 18px;
+    margin: 0 auto 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .service-type {
@@ -917,15 +1032,32 @@ a:hover {
 /* Resource Categories */
 .resource-category {
     background-color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    transition: var(--transition);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .resource-category:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: var(--primary-color);
 }
 
 .resource-header {
@@ -937,6 +1069,15 @@ a:hover {
 
 .resource-icon {
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    margin-right: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .resource-list {
@@ -972,41 +1113,82 @@ a:hover {
 /* Tool Cards */
 .tool-card {
     background-color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
     text-align: center;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
 }
 
 .tool-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: var(--primary-color);
 }
 
 .tool-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 18px;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 /* Contact Options */
 .contact-option {
     background-color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    transition: var(--transition);
-    border-left: 4px solid var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--light-color), #e0e0e0);
 }
 
 .contact-option:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-color: var(--primary-color);
 }
 
-.contact-option.urgent {
-    border-left-color: var(--primary-color);
+.contact-option.urgent::before {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .contact-header {
@@ -1018,6 +1200,15 @@ a:hover {
 
 .contact-icon {
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    margin-right: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .contact-details {

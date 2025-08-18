@@ -62,227 +62,136 @@
             </div>
         </section>
 
-        <!-- Modern Grid Layout -->
-        <div class="modern-grid-wrapper">
+        <!-- Contact Content -->
+        <div class="contact-wrapper">
             <div class="container">
-                <!-- Contact Grid System -->
-                <div class="contact-grid-system">
+                
+                <!-- Contact Form Section -->
+                <section class="contact-form-section">
+                    <div class="section-header">
+                        <h2>Contact Us</h2>
+                        <p>Get in touch with our team for quotes, technical support, or general inquiries.</p>
+                    </div>
                     
-                    <!-- Hero Module - Full Width -->
-                    <div class="grid-module hero-module">
-                        <div class="module-inner">
-                            <div class="hero-content">
-                                <div class="hero-badge">
-                                    <span class="badge-icon">⚡</span>
-                                    <span class="badge-text">Core Distributor</span>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required>
                                 </div>
-                                <h1 class="hero-title">Connect with LiTong</h1>
-                                <p class="hero-description">Professional circuit protection solutions with global reach and local expertise</p>
-                                <div class="hero-metrics">
-                                    <div class="metric-item">
-                                        <span class="metric-value">15+</span>
-                                        <span class="metric-label">Global Offices</span>
-                                    </div>
-                                    <div class="metric-divider"></div>
-                                    <div class="metric-item">
-                                        <span class="metric-value">&lt;24h</span>
-                                        <span class="metric-label">Response</span>
-                                    </div>
-                                    <div class="metric-divider"></div>
-                                    <div class="metric-item">
-                                        <span class="metric-value">100%</span>
-                                        <span class="metric-label">Authentic</span>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
                                 </div>
+                                <div class="form-group">
+                                    <label for="company">Company</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label for="office">Preferred Office</label>
+                                    <select id="office" name="office">
+                                        <option value="">Select Office</option>
+                                        <option value="hk">Hong Kong (Headquarters)</option>
+                                        <option value="beijing">Beijing Office</option>
+                                        <option value="shanghai">Shanghai Office</option>
+                                        <option value="shenzhen">Shenzhen Office</option>
+                                        <option value="usa">United States</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="japan">Japan</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label for="inquiry-type">Inquiry Type</label>
+                                    <select id="inquiry-type" name="inquiry-type">
+                                        <option value="">Select Inquiry Type</option>
+                                        <option value="quote">Request Quote</option>
+                                        <option value="sample">Sample Request</option>
+                                        <option value="technical">Technical Support</option>
+                                        <option value="partnership">Partnership Inquiry</option>
+                                        <option value="general">General Question</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your inquiry, including specific products or applications if applicable..."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <p class="form-note">We typically respond within 24 hours during business days.</p>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Quick Contact Cards -->
+                <section class="quick-contact-section">
+                    <div class="section-header">
+                        <h2>Quick Contact</h2>
+                        <p>For immediate assistance, contact us directly through these channels.</p>
+                    </div>
+                    
+                    <div class="quick-contact-grid">
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Sales & Quotes</h3>
+                                <p>Get pricing and availability</p>
+                                <a href="mailto:sales@litong-group.com" class="contact-link">sales@litong-group.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Technical Support</h3>
+                                <p>Expert application guidance</p>
+                                <a href="mailto:support@litong-group.com" class="contact-link">support@litong-group.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Phone Support</h3>
+                                <p>Direct line (Hong Kong HQ)</p>
+                                <a href="tel:+85224248227" class="contact-link">+852-2424-8227</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>Partnerships</h3>
+                                <p>Strategic partnerships</p>
+                                <a href="mailto:partners@litong-group.com" class="contact-link">partners@litong-group.com</a>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- Quick Actions Module -->
-                    <div class="grid-module quick-actions-module">
-                        <div class="module-inner">
-                            <div class="module-header">
-                                <h3 class="module-title">Quick Actions</h3>
-                                <p class="module-subtitle">Direct contact methods</p>
-                            </div>
-                            <div class="quick-actions-grid">
-                                <a href="mailto:sales@litong-group.com" class="action-card primary">
-                                    <div class="action-icon">💼</div>
-                                    <div class="action-content">
-                                        <span class="action-title">Get Quote</span>
-                                        <span class="action-desc">Sales & Pricing</span>
-                                    </div>
-                                </a>
-                                <a href="mailto:support@litong-group.com" class="action-card">
-                                    <div class="action-icon">🔧</div>
-                                    <div class="action-content">
-                                        <span class="action-title">Support</span>
-                                        <span class="action-desc">Technical Help</span>
-                                    </div>
-                                </a>
-                                <a href="mailto:samples@litong-group.com" class="action-card">
-                                    <div class="action-icon">📦</div>
-                                    <div class="action-content">
-                                        <span class="action-title">Samples</span>
-                                        <span class="action-desc">Free Evaluation</span>
-                                    </div>
-                                </a>
-                                <a href="tel:+85224248227" class="action-card">
-                                    <div class="action-icon">📞</div>
-                                    <div class="action-content">
-                                        <span class="action-title">Call Now</span>
-                                        <span class="action-desc">+852-2424-8227</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Areas Module -->
-                    <div class="grid-module service-areas-module">
-                        <div class="module-inner">
-                            <div class="module-header">
-                                <h3 class="module-title">Service Areas</h3>
-                                <p class="module-subtitle">Specialized expertise</p>
-                            </div>
-                            <div class="service-areas-list">
-                                <div class="service-area-item">
-                                    <div class="area-icon">🚗</div>
-                                    <div class="area-content">
-                                        <h4>Electric Vehicles</h4>
-                                        <p>Battery management, charging systems, motor controllers</p>
-                                    </div>
-                                </div>
-                                <div class="service-area-item">
-                                    <div class="area-icon">🔋</div>
-                                    <div class="area-content">
-                                        <h4>Energy Storage</h4>
-                                        <p>Grid-scale ESS, residential systems, microgrids</p>
-                                    </div>
-                                </div>
-                                <div class="service-area-item">
-                                    <div class="area-icon">☀️</div>
-                                    <div class="area-content">
-                                        <h4>Solar Power</h4>
-                                        <p>PV systems, inverters, combiner boxes</p>
-                                    </div>
-                                </div>
-                                <div class="service-area-item">
-                                    <div class="area-icon">⚡</div>
-                                    <div class="area-content">
-                                        <h4>Industrial</h4>
-                                        <p>Manufacturing, rail transport, telecommunications</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Global Presence Module -->
-                    <div class="grid-module global-presence-module">
-                        <div class="module-inner">
-                            <div class="module-header">
-                                <h3 class="module-title">Global Presence</h3>
-                                <p class="module-subtitle">Worldwide support network</p>
-                            </div>
-                            <div class="presence-grid">
-                                <div class="presence-region">
-                                    <div class="region-header">
-                                        <span class="region-flag">🌏</span>
-                                        <span class="region-name">Asia-Pacific</span>
-                                        <span class="region-time">GMT+8</span>
-                                    </div>
-                                    <div class="region-offices">6 offices</div>
-                                </div>
-                                <div class="presence-region">
-                                    <div class="region-header">
-                                        <span class="region-flag">🇪🇺</span>
-                                        <span class="region-name">Europe</span>
-                                        <span class="region-time">CET</span>
-                                    </div>
-                                    <div class="region-offices">7 offices</div>
-                                </div>
-                                <div class="presence-region">
-                                    <div class="region-header">
-                                        <span class="region-flag">🌎</span>
-                                        <span class="region-name">Americas</span>
-                                        <span class="region-time">EST</span>
-                                    </div>
-                                    <div class="region-offices">2 offices</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Response Times Module -->
-                    <div class="grid-module response-times-module">
-                        <div class="module-inner">
-                            <div class="module-header">
-                                <h3 class="module-title">Response Times</h3>
-                                <p class="module-subtitle">Service level commitments</p>
-                            </div>
-                            <div class="response-times-list">
-                                <div class="response-item urgent">
-                                    <div class="response-indicator"></div>
-                                    <div class="response-content">
-                                        <span class="response-type">Emergency Support</span>
-                                        <span class="response-time">2-4 hours</span>
-                                    </div>
-                                </div>
-                                <div class="response-item high">
-                                    <div class="response-indicator"></div>
-                                    <div class="response-content">
-                                        <span class="response-type">Technical Queries</span>
-                                        <span class="response-time">Same day</span>
-                                    </div>
-                                </div>
-                                <div class="response-item normal">
-                                    <div class="response-indicator"></div>
-                                    <div class="response-content">
-                                        <span class="response-type">Sales Inquiries</span>
-                                        <span class="response-time">24 hours</span>
-                                    </div>
-                                </div>
-                                <div class="response-item normal">
-                                    <div class="response-indicator"></div>
-                                    <div class="response-content">
-                                        <span class="response-type">Samples</span>
-                                        <span class="response-time">2-3 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quality Assurance Module -->
-                    <div class="grid-module quality-module">
-                        <div class="module-inner">
-                            <div class="module-header">
-                                <h3 class="module-title">Quality Assurance</h3>
-                                <p class="module-subtitle">Our commitments</p>
-                            </div>
-                            <div class="quality-badges">
-                                <div class="quality-badge">
-                                    <div class="badge-check">✓</div>
-                                    <span class="badge-label">100% Authentic</span>
-                                </div>
-                                <div class="quality-badge">
-                                    <div class="badge-check">✓</div>
-                                    <span class="badge-label">Direct Sourcing</span>
-                                </div>
-                                <div class="quality-badge">
-                                    <div class="badge-check">✓</div>
-                                    <span class="badge-label">Full Traceability</span>
-                                </div>
-                                <div class="quality-badge">
-                                    <div class="badge-check">✓</div>
-                                    <span class="badge-label">Expert Support</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
 

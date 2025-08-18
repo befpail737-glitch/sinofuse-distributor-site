@@ -63,136 +63,21 @@
         </section>
 
         <!-- Contact Content -->
-        <div class="contact-wrapper">
-            <div class="container">
-                
-                <!-- Contact Form Section -->
-                <section class="contact-form-section">
-                    <div class="section-header">
-                        <h2>Contact Us</h2>
-                        <p>Get in touch with our team for quotes, technical support, or general inquiries.</p>
+        <div class="container">
+            <!-- Contact Introduction -->
+            <section class="contact-intro">
+                <div class="intro-content">
+                    <div class="globe-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#3498db" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12,2 A15.3,15.3 0 0 1 12,22 A15.3,15.3 0 0 1 12,2"/>
+                        </svg>
                     </div>
-                    
-                    <div class="contact-form-container">
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label for="name">Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="company">Company</label>
-                                    <input type="text" id="company" name="company">
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="form-group form-group-full">
-                                    <label for="office">Preferred Office</label>
-                                    <select id="office" name="office">
-                                        <option value="">Select Office</option>
-                                        <option value="hk">Hong Kong (Headquarters)</option>
-                                        <option value="beijing">Beijing Office</option>
-                                        <option value="shanghai">Shanghai Office</option>
-                                        <option value="shenzhen">Shenzhen Office</option>
-                                        <option value="usa">United States</option>
-                                        <option value="germany">Germany</option>
-                                        <option value="uk">United Kingdom</option>
-                                        <option value="japan">Japan</option>
-                                    </select>
-                                </div>
-                                <div class="form-group form-group-full">
-                                    <label for="inquiry-type">Inquiry Type</label>
-                                    <select id="inquiry-type" name="inquiry-type">
-                                        <option value="">Select Inquiry Type</option>
-                                        <option value="quote">Request Quote</option>
-                                        <option value="sample">Sample Request</option>
-                                        <option value="technical">Technical Support</option>
-                                        <option value="partnership">Partnership Inquiry</option>
-                                        <option value="general">General Question</option>
-                                    </select>
-                                </div>
-                                <div class="form-group form-group-full">
-                                    <label for="message">Message *</label>
-                                    <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your inquiry, including specific products or applications if applicable..."></textarea>
-                                </div>
-                            </div>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                                <p class="form-note">We typically respond within 24 hours during business days.</p>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-
-                <!-- Quick Contact Cards -->
-                <section class="quick-contact-section">
-                    <div class="section-header">
-                        <h2>Quick Contact</h2>
-                        <p>For immediate assistance, contact us directly through these channels.</p>
-                    </div>
-                    
-                    <div class="quick-contact-grid">
-                        <div class="contact-card">
-                            <div class="card-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h3>Sales & Quotes</h3>
-                                <p>Get pricing and availability</p>
-                                <a href="mailto:sales@litong-group.com" class="contact-link">sales@litong-group.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="card-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h3>Technical Support</h3>
-                                <p>Expert application guidance</p>
-                                <a href="mailto:support@litong-group.com" class="contact-link">support@litong-group.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="card-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h3>Phone Support</h3>
-                                <p>Direct line (Hong Kong HQ)</p>
-                                <a href="tel:+85224248227" class="contact-link">+852-2424-8227</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="card-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z"/>
-                                </svg>
-                            </div>
-                            <div class="card-content">
-                                <h3>Partnerships</h3>
-                                <p>Strategic partnerships</p>
-                                <a href="mailto:partners@litong-group.com" class="contact-link">partners@litong-group.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
+                    <h2>Find Your Nearest Office</h2>
+                    <p>Contact our local offices worldwide for personalized support</p>
+                </div>
+            </section>
         </div>
 
         <div class="container">
@@ -459,6 +344,48 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Simple Contact Form -->
+            <section class="simple-contact-form">
+                <div class="form-container">
+                    <h2>Get in Touch</h2>
+                    <p>Send us a message and we'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-field full-width">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-field full-width">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry..."></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </section>
 

@@ -2,7 +2,7 @@ import os
 import re
 
 def minify_js(js_content):
-    \"\"\"
+    """
     Basic JavaScript minification by removing comments and extra whitespace
     
     Args:
@@ -10,7 +10,7 @@ def minify_js(js_content):
         
     Returns:
         str: Minified JavaScript content
-    \"\"\"
+    """
     # Remove single-line comments (but preserve URLs and regex)
     lines = js_content.split('\n')
     new_lines = []
@@ -30,7 +30,7 @@ def minify_js(js_content):
             char = line[i]
             
             # Handle string literals
-            if char in ('"', \"'\", '`') and (i == 0 or line[i-1] != '\\\\'):
+            if char in ('"', "'", '`') and (i == 0 or line[i-1] != '\\'):
                 if not in_string:
                     in_string = True
                     string_char = char
@@ -65,20 +65,20 @@ def minify_js(js_content):
     minified = ';'.join(new_lines)
     
     # Remove extra spaces around operators
-    minified = re.sub(r'\\s*([=+\\-*/<>!&|{}()\\[\\];:,])\\s*', r'\\1', minified)
+    minified = re.sub(r'\s*([=+\-*/<>!&|{}()\[\];:,])\s*', r'\1', minified)
     
     # Remove extra whitespace
-    minified = re.sub(r'\\s+', ' ', minified)
+    minified = re.sub(r'\s+', ' ', minified)
     
     return minified.strip()
 
 def process_js_files(directory):
-    \"\"\"
+    """
     Process all JavaScript files in directory
     
     Args:
         directory (str): Directory containing JavaScript files
-    \"\"\"
+    """
     # Walk through directory
     for root, dirs, files in os.walk(directory):
         for file in files:
@@ -105,7 +105,7 @@ def process_js_files(directory):
 
 if __name__ == "__main__":
     # Process JavaScript files in js directory
-    js_dir = r"C:\\Users\\ymlt\\Desktop\\sinofuse-distributor-site\\js"
+    js_dir = r"C:\Users\ymlt\Desktop\sinofuse-distributor-site\js"
     
     if os.path.exists(js_dir):
         print("Starting JavaScript minification...")

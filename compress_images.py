@@ -1,6 +1,5 @@
 import os
 from PIL import Image
-import pillow_avif
 
 def compress_image(input_path, output_path, quality=85):
     """

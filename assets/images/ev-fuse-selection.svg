@@ -1,0 +1,7 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f0f0f0"/>
+  <rect x="50" y="50" width="200" height="100" fill="#d0d0d0"/>
+  <rect x="300" y="50" width="200" height="100" fill="#d0d0d0"/>
+  <rect x="550" y="50" width="200" height="100" fill="#d0d0d0"/>
+  <text x="400" y="350" font-family="Arial" font-size="24" text-anchor="middle" fill="#888888">EV Fuse Selection Guide</text>
+</svg>

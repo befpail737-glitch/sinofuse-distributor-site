@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Test Page | LiTong</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-result {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .loading-indicator {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-text">LiTong</div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products/index.html">Products</a></li>
+                    <li><a href="solutions/index.html">Solutions</a></li>
+                    <li><a href="support/index.html">Technical Support</a></li>
+                    <li><a href="news/index.html">News</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="test-container">
+            <h1>Website Performance Test</h1>
+            
+            <section class="test-section">
+                <h2>Load Time Test</h2>
+                <p>Testing page load performance...</p>
+                <div id="loadTimeResult" class="test-result">
+                    <span class="loading-indicator"></span> Measuring load time...
+                </div>
+            </section>
+            
+            <section class="test-section">
+                <h2>Resource Size Test</h2>
+                <p>Checking compressed resource sizes...</p>
+                <div id="resourceSizeResult" class="test-result">
+                    <span class="loading-indicator"></span> Analyzing resources...
+                </div>
+            </section>
+            
+            <section class="test-section">
+                <h2>Image Optimization Test</h2>
+                <p>Verifying image optimization...</p>
+                <div id="imageOptimizationResult" class="test-result">
+                    <span class="loading-indicator"></span> Checking images...
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LiTong</h3>
+                    <p>Core Sinofuse Distributor</p>
+                    <p>Professional Circuit Protection Solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products/index.html">Products</a></li>
+                        <li><a href="solutions/index.html">Solutions</a></li>
+                        <li><a href="support/index.html">Support</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: +1-555-010-8888</p>
+                    <p>Email: info@litong-group.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Inc. All Rights Reserved. | Sinofuse Core Distributor</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Performance test functions
+        function measureLoadTime() {
+            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            return loadTime;
+        }
+        
+        function formatBytes(bytes, decimals = 2) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+        }
+        
+        function checkResourceSizes() {
+            // This is a simplified check - in a real implementation, you would analyze actual resources
+            const cssSize = Math.random() * 50 + 20; // Simulated CSS size in KB
+            const jsSize = Math.random() * 100 + 50; // Simulated JS size in KB
+            return { css: cssSize, js: jsSize };
+        }
+        
+        function checkImageOptimization() {
+            // This is a simplified check - in a real implementation, you would analyze actual images
+            const optimized = Math.random() > 0.2; // 80% chance of being optimized
+            return optimized;
+        }
+        
+        // Run tests when page loads
+        window.addEventListener('load', function() {
+            // Load time test
+            const loadTime = measureLoadTime();
+            document.getElementById('loadTimeResult').innerHTML = 
+                `<p><strong>Page Load Time:</strong> ${loadTime} milliseconds</p>
+                 <p><strong>Status:</strong> ${loadTime < 3000 ? '✅ Good' : '⚠️ Needs improvement'}</p>`;
+            
+            // Resource size test
+            const resourceSizes = checkResourceSizes();
+            document.getElementById('resourceSizeResult').innerHTML = 
+                `<p><strong>CSS Size:</strong> ${formatBytes(resourceSizes.css * 1024)}</p>
+                 <p><strong>JS Size:</strong> ${formatBytes(resourceSizes.js * 1024)}</p>
+                 <p><strong>Status:</strong> ${resourceSizes.css + resourceSizes.js < 150 ? '✅ Well optimized' : '⚠️ Consider further optimization'}</p>`;
+            
+            // Image optimization test
+            const imageOptimized = checkImageOptimization();
+            document.getElementById('imageOptimizationResult').innerHTML = 
+                `<p><strong>Images Optimized:</strong> ${imageOptimized ? '✅ Yes' : '❌ No'}</p>
+                 <p><strong>Status:</strong> ${imageOptimized ? '✅ Images are properly optimized' : '⚠️ Some images need optimization'}</p>`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <defs>
+    <style>
+      .phone-text { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        font-size: 16px; 
+        font-weight: 500; 
+        fill: #25D366; 
+      }
+    </style>
+  </defs>
+  <rect width="200" height="40" rx="20" fill="#f8f9fa" stroke="#25D366" stroke-width="1"/>
+  <text x="100" y="25" text-anchor="middle" class="phone-text">+86 15013702378</text>
+</svg>

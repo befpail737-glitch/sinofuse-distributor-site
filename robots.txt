@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sinofuse-distributor.com/sitemap.xml
+Sitemap: https://sinofuse.elec-distributor.com/sitemap.xml

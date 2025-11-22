@@ -1,12 +1,12 @@
 # Sinofuse Distributor Site
 
-This is the source code for the Sinofuse distributor website hosted at https://sinofuse-distributor.com/
+This is the source code for the Sinofuse distributor website hosted at https://sinofuse.elec-distributor.com/
 
 ## SEO Analysis and Fixes
 
 After analyzing the site, we identified several potential issues that could affect its search engine ranking:
 
-1. **Domain Accessibility**: The domain `sinofuse-distributor.com` is currently not accessible. This is the most critical issue.
+1. **Domain Accessibility**: The domain `sinofuse.elec-distributor.com` is the new domain for the site.
 2. **Keyword Optimization**: While the site mentions "Sinofuse distributor", we can improve keyword targeting.
 3. **Content Enhancement**: Adding more detailed content about Sinofuse products and distributor services.
 

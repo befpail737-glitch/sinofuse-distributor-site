@@ -8,8 +8,8 @@ os.makedirs(image_dir, exist_ok=True)
 
 # 定义要下载的图片URL列表
 image_urls = [
-    "https://sinofuse-distributor.com/assets/images/team/technical-team.jpg",
-    "https://sinofuse-distributor.com/assets/images/blog/ev-fuse-selection.jpg",
+    "https://sinofuse.elec-distributor.com/assets/images/team/technical-team.jpg",
+    "https://sinofuse.elec-distributor.com/assets/images/blog/ev-fuse-selection.jpg",
 ]
 
 # 下载图片

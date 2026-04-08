@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinofuse.elec-distributor.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://sinofuse.elec-distributor.com/us/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://sinofuse.elec-distributor.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="de-de" href="https://sinofuse.elec-distributor.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr-fr" href="https://sinofuse.elec-distributor.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it-it" href="https://sinofuse.elec-distributor.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl-pl" href="https://sinofuse.elec-distributor.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru-ru" href="https://sinofuse.elec-distributor.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="vi-vn" href="https://sinofuse.elec-distributor.com/vn/"/>
+    <xhtml:link rel="alternate" hreflang="ms-my" href="https://sinofuse.elec-distributor.com/my/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://sinofuse.elec-distributor.com/in/"/>
+    <xhtml:link rel="alternate" hreflang="ja-jp" href="https://sinofuse.elec-distributor.com/jp/"/>
+    <xhtml:link rel="alternate" hreflang="ko-kr" href="https://sinofuse.elec-distributor.com/kr/"/>
+    <xhtml:link rel="alternate" hreflang="es-mx" href="https://sinofuse.elec-distributor.com/mx/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://sinofuse.elec-distributor.com/br/"/>
+    <xhtml:link rel="alternate" hreflang="tr-tr" href="https://sinofuse.elec-distributor.com/tr/"/>
+  </url>
+  
+  <!-- Product Pages -->
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/products/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/products/ev-fuses/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sinofuse.elec-distributor.com/images/products/ev-fuses.jpg</image:loc>
+      <image:title>Sinofuse EV Fuses for Electric Vehicles</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/products/ess-fuses/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sinofuse.elec-distributor.com/images/products/ess-fuses.jpg</image:loc>
+      <image:title>Sinofuse ESS Fuses for Energy Storage Systems</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/products/pv-fuses/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sinofuse.elec-distributor.com/images/products/pv-fuses.jpg</image:loc>
+      <image:title>Sinofuse gPV Fuses for Solar Photovoltaic</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/products/industrial-fuses/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Company Pages -->
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/about/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/authorization/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/contact/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/local-warehouse/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- P1 Local Pages -->
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/vn/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="vi-vn" href="https://sinofuse.elec-distributor.com/vn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinofuse.elec-distributor.com/"/>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/de/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de-de" href="https://sinofuse.elec-distributor.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinofuse.elec-distributor.com/"/>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/in/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://sinofuse.elec-distributor.com/in/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinofuse.elec-distributor.com/"/>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/us/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://sinofuse.elec-distributor.com/us/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinofuse.elec-distributor.com/"/>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/jp/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja-jp" href="https://sinofuse.elec-distributor.com/jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinofuse.elec-distributor.com/"/>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/kr/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko-kr" href="https://sinofuse.elec-distributor.com/kr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinofuse.elec-distributor.com/"/>
+  </url>
+  
+  <!-- Resources -->
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/selection-guide/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://sinofuse.elec-distributor.com/faq/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

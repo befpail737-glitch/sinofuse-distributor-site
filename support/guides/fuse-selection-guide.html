@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Complete Fuse Selection Guide | How to Choose the Right Fuse | LiTong</title>
+    <meta name="description" content="Comprehensive fuse selection guide covering EV fuses, PV fuses, and industrial fuses. Learn how to calculate ratings, understand fuse curves, and select the right protection for your application.">
+    <meta name="keywords" content="fuse selection guide, how to choose a fuse, fuse sizing, EV fuse selection, PV fuse selection, fuse rating calculation, circuit protection guide">
+    <link rel="canonical" href="https://sinofuse.elec-distributor.com/support/guides/fuse-selection-guide.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Complete Fuse Selection Guide | LiTong">
+    <meta property="og:description" content="Learn how to select the right fuse for EV, PV, and industrial applications with our comprehensive technical guide.">
+    <meta property="og:url" content="https://sinofuse.elec-distributor.com/support/guides/fuse-selection-guide.html">
+    
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Complete Fuse Selection Guide: How to Choose the Right Fuse for Your Application",
+      "description": "Comprehensive technical guide covering fuse selection principles, rating calculations, and application-specific recommendations for EV, PV, and industrial systems.",
+      "author": {
+        "@type": "Organization",
+        "name": "LiTong"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sinofuse.elec-distributor.com/assets/images/logo.png"
+        }
+      },
+      "datePublished": "2026-04-08",
+      "dateModified": "2026-04-08",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sinofuse.elec-distributor.com/support/guides/fuse-selection-guide.html"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <span class="logo-text">LiTong</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../products/index.html">Products</a></li>
+                    <li><a href="../../solutions/index.html">Solutions</a></li>
+                    <li><a href="../index.html" class="active">Support</a></li>
+                    <li><a href="../../about.html">About Us</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);">
+            <div class="container">
+                <h1>Complete Fuse Selection Guide</h1>
+                <p>Technical Whitepaper: How to Choose the Right Circuit Protection</p>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    
+                    <!-- Introduction -->
+                    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 40px; border-radius: 16px; margin-bottom: 40px;">
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+                            Selecting the right fuse is critical for protecting electrical systems and ensuring safe operation. This comprehensive guide covers the fundamental principles of fuse selection, rating calculations, and application-specific recommendations for <strong>electric vehicles (EV)</strong>, <strong>photovoltaic (PV) systems</strong>, and <strong>industrial applications</strong>.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8;">
+                            Whether you're designing a battery management system, solar installation, or industrial control panel, understanding fuse characteristics and selection criteria will help you make informed decisions that protect your equipment and personnel.
+                        </p>
+                    </div>
+
+                    <!-- Table of Contents -->
+                    <h2 style="color: #1a5276; margin-bottom: 25px;">Table of Contents</h2>
+                    <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 40px;">
+                        <ol style="line-height: 2; margin: 0; padding-left: 20px;">
+                            <li><a href="#principles" style="color: #d32f2f;">Fundamental Principles of Fuse Selection</a></li>
+                            <li><a href="#ratings" style="color: #d32f2f;">Understanding Fuse Ratings</a></li>
+                            <li><a href="#calculation" style="color: #d32f2f;">Fuse Rating Calculation Methods</a></li>
+                            <li><a href="#ev" style="color: #d32f2f;">EV Fuse Selection Guide</a></li>
+                            <li><a href="#pv" style="color: #d32f2f;">PV Fuse Selection Guide</a></li>
+                            <li><a href="#industrial" style="color: #d32f2f;">Industrial Fuse Selection</a></li>
+                            <li><a href="#curves" style="color: #d32f2f;">Understanding Time-Current Curves</a></li>
+                            <li><a href="#common-mistakes" style="color: #d32f2f;">Common Selection Mistakes</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- Section 1: Fundamental Principles -->
+                    <h2 id="principles" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">1. Fundamental Principles of Fuse Selection</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">1.1 The Purpose of Circuit Protection</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Fuses serve as the first line of defense in electrical systems. Their primary functions include:
+                    </p>
+                    <ul style="line-height: 1.8; margin-bottom: 25px; padding-left: 25px;">
+                        <li><strong>Overcurrent Protection:</strong> Preventing damage from excessive current flow</li>
+                        <li><strong>Short-Circuit Protection:</strong> Quickly interrupting fault currents to prevent fires</li>
+                        <li><strong>System Isolation:</strong> Physically disconnecting faulty circuits</li>
+                        <li><strong>Arc Suppression:</strong> Safely extinguishing arcs during interruption</li>
+                    </ul>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">1.2 Key Selection Criteria</h3>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">When selecting a fuse, consider these critical factors:</p>
+                        <ul style="line-height: 1.8; margin: 0; padding-left: 25px;">
+                            <li><strong>Normal Operating Current:</strong> The steady-state current under typical conditions</li>
+                            <li><strong>Inrush Current:</strong> Temporary surge currents during startup</li>
+                            <li><strong>Voltage Rating:</strong> Must equal or exceed system voltage</li>
+                            <li><strong>Interrupting Rating:</strong> Maximum fault current the fuse can safely interrupt</li>
+                            <li><strong>Time-Current Characteristics:</strong> How quickly the fuse responds to overcurrents</li>
+                            <li><strong>Environmental Conditions:</strong> Temperature, humidity, vibration, altitude</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 2: Understanding Ratings -->
+                    <h2 id="ratings" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">2. Understanding Fuse Ratings</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">2.1 Current Rating</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        The current rating (ampere rating) indicates the maximum current a fuse can carry continuously without opening. However, fuses are designed to operate indefinitely at 100% of their rating only under specific conditions. In practice:
+                    </p>
+                    <ul style="line-height: 1.8; margin-bottom: 25px; padding-left: 25px;">
+                        <li>Standard fuses: Operate at 80% of rating for continuous loads</li>
+                        <li>EV fuses: Often rated for 100% continuous duty</li>
+                        <li>Derating may be required at elevated temperatures</li>
+                    </ul>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">2.2 Voltage Rating</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        The voltage rating must equal or exceed the maximum system voltage. Critical points:
+                    </p>
+                    <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 20px; margin-bottom: 25px;">
+                        <p style="margin: 0; font-weight: 600;">⚠️ Important:</p>
+                        <p style="margin: 10px 0 0 0;">AC and DC voltage ratings are NOT interchangeable. A fuse rated for 600V AC may only be rated for 300V DC or less. Always verify both AC and DC ratings for your application.</p>
+                    </div>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">2.3 Interrupting Rating (Breaking Capacity)</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        The interrupting rating specifies the maximum fault current the fuse can safely interrupt without rupturing. Modern fuses typically have interrupting ratings of:
+                    </p>
+                    <ul style="line-height: 1.8; margin-bottom: 25px; padding-left: 25px;">
+                        <li>Standard industrial: 100kA - 200kA</li>
+                        <li>Semiconductor protection: 100kA - 300kA</li>
+                        <li>EV applications: 20kA - 50kA DC</li>
+                    </ul>
+
+                    <!-- Section 3: Calculation Methods -->
+                    <h2 id="calculation" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">3. Fuse Rating Calculation Methods</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">3.1 Basic Calculation Formula</h3>
+                    <div style="background: #e8f4f8; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">Standard Selection Formula:</p>
+                        <code style="display: block; background: white; padding: 15px; border-radius: 5px; font-size: 1.1rem;">
+                            Fuse Rating = Normal Current × Safety Factor
+                        </code>
+                        <p style="margin-top: 15px; margin-bottom: 0;">Where Safety Factor typically ranges from 1.25 to 1.5 depending on application.</p>
+                    </div>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">3.2 Temperature Derating</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Fuses are typically rated at 25°C ambient. At higher temperatures, derating is necessary:
+                    </p>
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
+                        <thead>
+                            <tr style="background: #1a5276; color: white;">
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Ambient Temperature</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Derating Factor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: white;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">25°C (77°F)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">1.00 (no derating)</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">40°C (104°F)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">0.90</td>
+                            </tr>
+                            <tr style="background: white;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">50°C (122°F)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">0.80</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">60°C (140°F)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">0.70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Section 4: EV Fuse Selection -->
+                    <h2 id="ev" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">4. EV Fuse Selection Guide</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">4.1 EV Application Requirements</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Electric vehicle fuses face unique challenges including high DC voltages (up to 1000V), high continuous currents, and the need to interrupt fault currents quickly to protect battery systems.
+                    </p>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">4.2 EV Fuse Selection Criteria</h3>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: #d32f2f; color: white;">
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Parameter</th>
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Typical Range</th>
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Considerations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: white;">
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Voltage Rating</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">500V - 1000V DC</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Match battery pack voltage</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Current Rating</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">100A - 800A</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Based on motor/controller rating</td>
+                                </tr>
+                                <tr style="background: white;">
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Interrupting Rating</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">20kA - 50kA DC</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Must exceed max fault current</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Pre-arcing I²t</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Application specific</td>
+                                    <td style="padding: 12px; border: 1px solid #ddd;">Must protect semiconductors</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">4.3 EV Fuse Calculation Example</h3>
+                    <div style="background: #e8f4f8; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">Example: Battery Pack Protection</p>
+                        <ul style="line-height: 1.8; margin: 0; padding-left: 25px;">
+                            <li>System Voltage: 400V DC</li>
+                            <li>Maximum Continuous Current: 250A</li>
+                            <li>Ambient Temperature: 45°C</li>
+                            <li>Safety Factor: 1.25</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: 600;">Calculation:</p>
+                        <code style="display: block; background: white; padding: 15px; border-radius: 5px;">
+                            Base Rating = 250A × 1.25 = 312.5A<br>
+                            With 45°C Derating (0.85): 312.5A ÷ 0.85 = 368A<br>
+                            <strong>Selected Fuse: 400A (next standard size)</strong>
+                        </code>
+                    </div>
+
+                    <!-- Section 5: PV Fuse Selection -->
+                    <h2 id="pv" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">5. PV Fuse Selection Guide</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">5.1 PV System Protection Requirements</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Photovoltaic systems require specialized fuses that can handle unique conditions including reverse currents, daily thermal cycling, and outdoor environmental exposure.
+                    </p>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">5.2 PV Fuse Selection Criteria</h3>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">Key PV Fuse Specifications:</p>
+                        <ul style="line-height: 1.8; margin: 0; padding-left: 25px;">
+                            <li><strong>Voltage Rating:</strong> Must exceed maximum system voltage (typically 600V, 1000V, or 1500V DC)</li>
+                            <li><strong>Current Rating:</strong> 1.56 × Isc (short-circuit current) minimum per NEC</li>
+                            <li><strong>gPV Type:</strong> Must be gPV (photovoltaic) rated for full-range protection</li>
+                            <li><strong>Temperature Rating:</strong> -40°C to +90°C typical operating range</li>
+                            <li><strong>UV Resistance:</strong> Required for outdoor installations</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">5.3 PV String Fuse Calculation</h3>
+                    <div style="background: #e8f4f8; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">NEC 690.9 Calculation Method:</p>
+                        <code style="display: block; background: white; padding: 15px; border-radius: 5px;">
+                            Minimum Fuse Rating = 1.56 × Isc (module)<br><br>
+                            Where:<br>
+                            - Isc = Module short-circuit current<br>
+                            - 1.56 = 1.25 (safety factor) × 1.25 (NEC multiplier)
+                        </code>
+                        <p style="margin-top: 15px;"><strong>Example:</strong> For modules with Isc = 9.5A<br>
+                        Minimum Fuse = 1.56 × 9.5A = 14.82A → <strong>Select 15A fuse</strong></p>
+                    </div>
+
+                    <!-- Section 6: Industrial Fuse Selection -->
+                    <h2 id="industrial" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">6. Industrial Fuse Selection</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">6.1 Motor Protection</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Motor circuits present unique challenges due to high inrush currents during startup. Fuse selection must balance protection against nuisance tripping.
+                    </p>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">Motor Fuse Selection Guidelines:</p>
+                        <ul style="line-height: 1.8; margin: 0; padding-left: 25px;">
+                            <li><strong>General Purpose Motors:</strong> 1.5 × Full Load Amps (FLA)</li>
+                            <li><strong>High Starting Current Motors:</strong> 2.0 × FLA or use time-delay fuses</li>
+                            <li><strong>Continuous Duty:</strong> 1.25 × FLA minimum</li>
+                            <li><strong>Service Factor:</strong> Consider motor service factor (typically 1.15)</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">6.2 Transformer Protection</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Transformer primary fuses must withstand magnetizing inrush currents while providing protection against sustained overloads.
+                    </p>
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
+                        <thead>
+                            <tr style="background: #1a5276; color: white;">
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Transformer Size</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Fuse Rating</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: white;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">≤ 600V, ≤ 600kVA</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">1.25 × Primary Current</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Time-delay</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">> 600V</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">1.5 × Primary Current</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Time-delay</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Section 7: Time-Current Curves -->
+                    <h2 id="curves" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">7. Understanding Time-Current Curves</h2>
+                    
+                    <h3 style="color: #333; margin: 30px 0 15px;">7.1 Reading Time-Current Curves</h3>
+                    <p style="line-height: 1.8; margin-bottom: 20px;">
+                        Time-current curves graphically represent how quickly a fuse will open at various current levels. Understanding these curves is essential for coordinating protection and preventing nuisance operations.
+                    </p>
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                        <p style="font-weight: 600; margin-bottom: 15px;">Key Points on the Curve:</p>
+                        <ul style="line-height: 1.8; margin: 0; padding-left: 25px;">
+                            <li><strong>Minimum Melting Current:</strong> Lowest current that will eventually melt the element</li>
+                            <li><strong>100% Rating:</strong> Current the fuse can carry indefinitely</li>
+                            <li><strong>Pre-arcing I²t:</strong> Energy required to melt the fuse element</li>
+                            <li><strong>Total Clearing I²t:</strong> Total energy to fully interrupt the circuit</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="color: #333; margin: 30px 0 15px;">7.2 Fuse Speed Classes</h3>
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
+                        <thead>
+                            <tr style="background: #1a5276; color: white;">
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Speed Class</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Opening Time at 200%</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Typical Applications</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: white;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Ultra-Rapid (aR)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">< 1ms</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Semiconductor protection</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Fast Acting (F)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">< 1 second</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Electronic circuits</td>
+                            </tr>
+                            <tr style="background: white;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Time-Delay (T)</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">10-30 seconds</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Motors, transformers</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td style="padding: 12px; border: 1px solid #ddd;">Dual Element</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Variable</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Mixed loads</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Section 8: Common Mistakes -->
+                    <h2 id="common-mistakes" style="color: #1a5276; margin: 50px 0 25px; padding-bottom: 15px; border-bottom: 3px solid #d32f2f;">8. Common Selection Mistakes</h2>
+                    
+                    <div style="background: #f8d7da; border-left: 4px solid #dc3545; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: #721c24; margin-bottom: 15px;">❌ Mistake #1: Ignoring DC Ratings</h3>
+                        <p style="margin: 0; color: #721c24;">Using AC-rated fuses in DC circuits. DC arcs are harder to extinguish, requiring special fuse designs. Always verify DC voltage and interrupting ratings.</p>
+                    </div>
+
+                    <div style="background: #f8d7da; border-left: 4px solid #dc3545; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: #721c24; margin-bottom: 15px;">❌ Mistake #2: Undersizing for Inrush</h3>
+                        <p style="margin: 0; color: #721c24;">Not accounting for motor starting currents or capacitor charging currents. This leads to nuisance fuse operations and system downtime.</p>
+                    </div>
+
+                    <div style="background: #f8d7da; border-left: 4px solid #dc3545; padding: 25px; margin-bottom: 25px;">
+                        <h3 style="color: #721c24; margin-bottom: 15px;">❌ Mistake #3: Neglecting Temperature</h3>
+                        <p style="margin: 0; color: #721c24;">Failing to derate for high ambient temperatures or poor ventilation. This can cause premature fuse opening or reduced protection.</p>
+                    </div>
+
+                    <div style="background: #f8d7da; border-left: 4px solid #dc3545; padding: 25px; margin-bottom: 40px;">
+                        <h3 style="color: #721c24; margin-bottom: 15px;">❌ Mistake #4: Inadequate Interrupting Rating</h3>
+                        <p style="margin: 0; color: #721c24;">Selecting fuses with interrupting ratings below the available fault current. This is a serious safety hazard that can result in violent fuse failure.</p>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <h2 style="color: #1a5276; margin: 50px 0 25px;">Conclusion</h2>
+                    <div style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); padding: 30px; border-radius: 12px; margin-bottom: 40px;">
+                        <p style="line-height: 1.8; margin-bottom: 15px;">
+                            Proper fuse selection is both an art and a science. By understanding the fundamental principles, applying correct calculation methods, and avoiding common mistakes, you can ensure optimal protection for your electrical systems.
+                        </p>
+                        <p style="line-height: 1.8; margin-bottom: 15px;">
+                            Remember that fuse selection is not just about meeting minimum requirements—it's about achieving the right balance between protection and operational continuity.
+                        </p>
+                        <p style="line-height: 1.8; margin: 0;">
+                            <strong>Need expert assistance?</strong> LiTong's Field Application Engineers are available to help with your specific fuse selection requirements. <a href="../../contact.html" style="color: #155724; text-decoration: underline;">Contact us</a> for personalized support.
+                        </p>
+                    </div>
+
+                    <!-- Related Resources -->
+                    <h2 style="color: #1a5276; margin: 50px 0 25px;">Related Resources</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <a href="how-to-select-sinofuse-ev-fuse-for-bms.html" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-decoration: none; color: inherit;">
+                            <h4 style="color: #d32f2f; margin-bottom: 10px;">→ EV Fuse Selection for BMS</h4>
+                            <p style="font-size: 0.9rem; color: #666; margin: 0;">Detailed guide for battery management system protection</p>
+                        </a>
+                        <a href="dc-vs-ac-fuses.html" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-decoration: none; color: inherit;">
+                            <h4 style="color: #d32f2f; margin-bottom: 10px;">→ DC vs AC Fuses</h4>
+                            <p style="font-size: 0.9rem; color: #666; margin: 0;">Understanding the critical differences</p>
+                        </a>
+                        <a href="../notes/pv-inverter-protection-guide.html" style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-decoration: none; color: inherit;">
+                            <h4 style="color: #d32f2f; margin-bottom: 10px;">→ PV Inverter Protection</h4>
+                            <p style="font-size: 0.9rem; color: #666; margin: 0;">Solar inverter fuse selection guide</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need Help Selecting the Right Fuse?</h2>
+                    <p>Our FAE team can provide personalized recommendations for your specific application.</p>
+                    <div class="cta-buttons">
+                        <a href="../../contact.html" class="btn btn-primary">Contact Our Engineers</a>
+                        <a href="../../products/index.html" class="btn btn-outline">Browse Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LiTong</h3>
+                    <p>Core Sinofuse Distributor</p>
+                    <p>Professional Circuit Protection Solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../products/index.html">Products</a></li>
+                        <li><a href="../../solutions/index.html">Solutions</a></li>
+                        <li><a href="../index.html">Support</a></li>
+                        <li><a href="../../about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="fuse-selection-guide.html">Fuse Selection Guide</a></li>
+                        <li><a href="dc-vs-ac-fuses.html">DC vs AC Fuses</a></li>
+                        <li><a href="how-to-select-sinofuse-ev-fuse-for-bms.html">EV Fuse Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: +1-555-010-8888</p>
+                    <p>Email: info@elec-distributor.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Inc. All Rights Reserved. | Sinofuse Core Distributor</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
